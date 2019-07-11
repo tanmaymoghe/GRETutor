@@ -1,9 +1,26 @@
-//abruppt inputs
-//SSML effects and different responses{array}
-const blankArray = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+/* eslint-disable  func-names */
+/* eslint-disable  no-console */
+
 const Alexa = require('ask-sdk');
-const table = "GRE";
-const data = require('./data.json');
+const AWS = require('aws-sdk');
+
+const table = "userData";
+const words = require('./data.json');
+let userid ;
+var question;
+var answer;
+let speech;
+var optionSelected;
+let noOfQuizQuestions;
+let noOfRevisionQuestions;
+let userResponses;
+let firsttime = false;
+let isQuiz = false;
+let isRevision = false;
+let noOfCorrect = 0;
+let noOfIncorrect=0;
+let attempted = 0;
+let unattempted = 0;
 
 const LaunchHandler={
   canHandle(handlerInput) {
@@ -13,15 +30,18 @@ const LaunchHandler={
     && request.intent.name === 'LaunchIntent');
   },
   handle(handlerInput) {
+
+  
   return handlerInput.responseBuilder
   .speak("word coach welcomes you. you can choose to take a quiz or revise.")
-  .withShouldEndSession(false)
+  .reprompt()
   .getResponse();
 },
 };
 
 
-const QuizHandler={
+const QuizHandler=
+{
   canHandle(handlerInput) 
   {
     const request = handlerInput.requestEnvelope.request;
@@ -29,105 +49,77 @@ const QuizHandler={
       || (request.type === 'IntentRequest'
         && request.intent.name === 'QuizIntent');
   },
-  async handle(handlerInput) 
+  handle(handlerInput) 
   {
+    noOfQuizQuestions = handlerInput.requestEnvelope.request.intent.slots.Number.value;
+    console.log("user asked for "+noOfQuizQuestions+" Questions to quiz");
+    userid = handlerInput.requestEnvelope.session.user.userId;
+    isQuiz = true;
 
-    let userid ;
-    var question;
-    var answer;
-    let speech;
-    var optionSelected;
-    let noOfQuizQuestions;
-    let noOfRevisionQuestions;
-    let responses;
-    let firsttime = false;
-    let isQuiz = false;
-    let isRevision = false;
-    let noOfCorrect = 0;
-    let noOfIncorrect=0;
-    let attempted = 0;
-    let unattempted =1161;
-    let exist = 0;
-
-
-    const SessionAttributes = handlerInput.attributesManager.getSessionAttributes();
-
-    if (SessionAttributes.hasOwnProperty('exist'))
+    var params = 
     {
-     ({userid,question,answer,speech,optionSelected,
-      noOfCorrect,noOfIncorrect,noOfQuizQuestions,
-      noOfRevisionQuestions,responses,firsttime,
-      isQuiz,isRevision,attempted,unattempted,exist} = SessionAttributes);
-    }
+      TableName : table,
+      Key: 
+      {
+        "userID" : userid
+      }
+    };
     
-
-    SessionAttributes.noOfQuizQuestions = parseInt(handlerInput.requestEnvelope.request.intent.slots.Number.value,10);
+    var documentClient = new AWS.DynamoDB.DocumentClient();
     
-
-
-    //attempted noOfCorrect noOfIncorrect responses unattempted
-
-    const attributesManager = handlerInput.attributesManager;
-    const responseBuilder = handlerInput.responseBuilder;
- 
-    const persistentAttributes = await attributesManager.getPersistentAttributes() || {};
- 
-   if (Object.keys(persistentAttributes).length === 0) {
-     persistentAttributes.attempted = attempted;
-     persistentAttributes.noOfCorrect = noOfCorrect;
-     persistentAttributes.noOfIncorrect = noOfIncorrect;
-     persistentAttributes.responses = blankArray;
-     persistentAttributes.unattempted = unattempted;
-     
-     
-     SessionAttributes.attempted = attempted;
-     SessionAttributes.unattempted = unattempted;
-     SessionAttributes.noOfCorrect = noOfCorrect;
-     SessionAttributes.noOfIncorrect = noOfIncorrect;
-     SessionAttributes.responses = blankArray;
-     
-     
-     attributesManager.setPersistentAttributes(persistentAttributes);
-     await attributesManager.savePersistentAttributes();
-   } else {
-     SessionAttributes.attempted = persistentAttributes.attempted;
-     SessionAttributes.unattempted = persistentAttributes.unattempted;
-     SessionAttributes.noOfCorrect = persistentAttributes.noOfCorrect;
-     SessionAttributes.noOfIncorrect = persistentAttributes.noOfIncorrect;
-     SessionAttributes.responses = persistentAttributes.responses;
-   }
-   
-   console.log(" user asked for "+SessionAttributes.noOfQuizQuestions+" Questions to quiz "+SessionAttributes.unattempted+" are unattempted ");
-
-    if(SessionAttributes.unattempted < SessionAttributes.noOfQuizQuestions)
+    documentClient.get(params, function(err, data) 
     {
-      console.log(" You have asked for more questions than available ");
-      let response = " Sorry we only have "+SessionAttributes.unattempted+" questions left. "+
-                     " if you want to have a quiz of "+SessionAttributes.unattempted+" questions, just say "+
-                     " I want a quiz with "+SessionAttributes.unattempted+" questions ";
-      return handlerInput.responseBuilder
-        .speak(response)
-        .withShouldEndSession(false)
-        .getResponse();
-    }
+      if (err) console.log();
+      else 
+      {
+        if ( data.hasOwnProperty('Item') ) 
+        {
+          console.log(data.Item.Responses);
+          userResponses=data.Item.Responses;
+        }
+        else 
+        {
+          let params =  
+          {
+            TableName : 'userData',
+            Item: 
+            {
+              userID : userid,
+              Responses : [0,0,0,0,0]
+            }
+          };
 
-    SessionAttributes.userid = handlerInput.requestEnvelope.session.user.userId;
-    SessionAttributes.isQuiz = true;
-    
-  
-    SessionAttributes.questionArray = generateQuiz(SessionAttributes.responses,SessionAttributes.noOfQuizQuestions);
-    SessionAttributes.optionArray = generateOptionArray(SessionAttributes.questionArray);
-    console.log("Questions: "+SessionAttributes.questionArray);
-    console.log("Options: "+SessionAttributes.optionArray);
+          userResponses=[0,0,0,0,0];
+          documentClient.put(params,function(err, data) 
+          {
+            if (err) console.log(err);
+            else console.log(data);
+          });
+        }
+      };
+    }); 
 
-           SessionAttributes.firsttime=true;
-           SessionAttributes.question=0;
+    /*let params =  
+          {
+            TableName : 'userData',
+            Item: 
+            {
+              userID : userid,
+              Responses : ["0","0","0","0","0"]
+            }
+          };
 
-         handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
+          documentClient.put(params,function(err, data) 
+          {
+            if (err) console.log(err);
+            else console.log(data);
+          });*/
 
-   return AnswerIntentHandler.handle(handlerInput);
-    }
-  }; 
+
+          firsttime=true;
+  return AnswerIntentHandler.handle(handlerInput);
+  },
+};
 
 const ReviseHandler={
   canHandle(handlerInput) {
@@ -136,135 +128,27 @@ const ReviseHandler={
       || (request.type === 'IntentRequest'
         && request.intent.name === 'ReviseIntent');
   },
-  async handle(handlerInput) {
+  handle(handlerInput) {
 
-    let userid ;
-    var question;
-    var answer;
-    let speech;
-    var optionSelected;
-    let noOfQuizQuestions;
-    let noOfRevisionQuestions;
-    let responses;
-    let firsttime = false;
-    let isQuiz = false;
-    let isRevision = false;
-    let noOfCorrect = 0;
-    let noOfIncorrect=0;
-    let attempted = 0;
-    let unattempted = 1161;
-    let exist = 0;
+    noOfRevisionQuestions = handlerInput.requestEnvelope.request.intent.slots.Number.value;
+    console.log("user asked for "+noOfQuizQuestions+" Questions to revise");
 
-    const SessionAttributes = handlerInput.attributesManager.getSessionAttributes();
+    isRevision=true;
+    question = words[2].DEFINITION;
+    answer = words[2].WORD;
 
-    if (SessionAttributes.hasOwnProperty('exist'))
-    {
-    ({userid,question,answer,speech,optionSelected,
-      noOfCorrect,noOfIncorrect,noOfQuizQuestions,
-      noOfRevisionQuestions,responses,firsttime,
-      isQuiz,isRevision,attempted,unattempted,exist} = SessionAttributes);
-    }
+    var op1 = words[5].WORD;
+    var op2 = words[6].WORD;
+    var op3 = words[2].WORD;
+    var op4 = words[1].WORD;
 
-    SessionAttributes.noOfRevisionQuestions = parseInt(handlerInput.requestEnvelope.request.intent.slots.Number.value,10);
-    var difficulty=handlerInput.requestEnvelope.request.intent.slots.Difficulty.value;
+   speech = "What word best fits this definition."+question+"A."+op1+"B."+op2+"C."+op3+"D."+op4;
 
-
-    const attributesManager = handlerInput.attributesManager;
-    const responseBuilder = handlerInput.responseBuilder;
- 
-    const persistentAttributes = await attributesManager.getPersistentAttributes() || {};
- 
-   if (Object.keys(persistentAttributes).length === 0) {
-     persistentAttributes.attempted = attempted;
-     persistentAttributes.noOfCorrect = noOfCorrect;
-     persistentAttributes.noOfIncorrect = noOfIncorrect;
-     persistentAttributes.responses = blankArray;
-     persistentAttributes.unattempted = unattempted;
-     
-     SessionAttributes.attempted = attempted;
-     SessionAttributes.unattempted = unattempted;
-     SessionAttributes.noOfCorrect = noOfCorrect;
-     SessionAttributes.noOfIncorrect = noOfIncorrect;
-     SessionAttributes.responses = blankArray;
-     
-     attributesManager.setPersistentAttributes(persistentAttributes);
-     await attributesManager.savePersistentAttributes();
-   } else {
-     SessionAttributes.attempted = persistentAttributes.attempted;
-     SessionAttributes.unattempted = persistentAttributes.unattempted;
-     SessionAttributes.noOfCorrect = persistentAttributes.noOfCorrect;
-     SessionAttributes.noOfIncorrect = persistentAttributes.noOfIncorrect;
-     SessionAttributes.responses = persistentAttributes.responses;
-   }
-
-    SessionAttributes.isRevision = true;
-    SessionAttributes.firsttime = true;
-
-    SessionAttributes.userid = handlerInput.requestEnvelope.session.user.userId;
-
-    var temp;
-    var questionArray;
-    var optionArray;
-    switch (difficulty) {
-      case 'easy':
-          if(SessionAttributes.noOfCorrect < SessionAttributes.noOfRevisionQuestions)
-          {
-            console.log(" You have asked for more questions than available ");
-            let response = " Sorry I only have "+SessionAttributes.noOfCorrect+" easy questions left. "+
-                           " if you want to revise "+SessionAttributes.noOfCorrect+" questions, just say "+
-                           " I want to revise "+SessionAttributes.noOfCorrect+" easy questions ";
-            return handlerInput.responseBuilder
-              .speak(response)
-              .withShouldEndSession(false)
-              .getResponse();
-          }
-        questionArray=generateEasyQuestions(SessionAttributes.responses,SessionAttributes.noOfRevisionQuestions);
-        break;
-      case 'medium':
-          if((SessionAttributes.noOfIncorrect < (SessionAttributes.noOfRevisionQuestions+1)/2)||
-            (SessionAttributes.noOfCorrect < (SessionAttributes.noOfRevisionQuestions+1)/2))
-          {
-            var numberOfMedium = 2*Math.min(SessionAttributes.noOfCorrect,SessionAttributes.noOfIncorrect);
-            console.log(" You have asked for more questions than available noOfCorrect="+SessionAttributes.noOfCorrect);
-            let response = " Sorry I only have "+(numberOfMedium-1) +" medium questions left. "+
-                           " if you want to revise " + (numberOfMedium-1) +" questions, just say "+
-                           " I want to revise " + (numberOfMedium-1)+" medium questions ";
-            return handlerInput.responseBuilder
-              .speak(response)
-              .withShouldEndSession(false)
-              .getResponse();
-          }
-        questionArray=generateMediumQuestions(SessionAttributes.responses,SessionAttributes.noOfRevisionQuestions);
-        break;
-      case 'difficult':
-          if(SessionAttributes.noOfIncorrect < SessionAttributes.noOfRevisionQuestions)
-          {
-            console.log(" You have asked for more questions than available ");
-            let response = " Sorry I only have "+SessionAttributes.noOfIncorrect+" difficult questions left. "+
-                           " if you want to revise "+SessionAttributes.noOfIncorrect+" questions, just say "+
-                           " I want to revise "+SessionAttributes.noOfIncorrect+" difficult questions ";
-            return handlerInput.responseBuilder
-              .speak(response)
-              .withShouldEndSession(false)
-              .getResponse();
-          }
-        questionArray=generateDiffQuestions(SessionAttributes.responses,SessionAttributes.noOfRevisionQuestions);
-        break;
-    }
-
-    optionArray = generateOptionArray(questionArray);
-
-    SessionAttributes.optionArray = optionArray;
-    SessionAttributes.questionArray = questionArray;
-    //attempted noOfCorrect noOfIncorrect responses unattempted
-
-           SessionAttributes.firsttime=true;
-           SessionAttributes.question=0;
-
-         
-
-
-  handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
+  firsttime =true;
+  /*return handlerInput.responseBuilder
+  .speak("speech.")
+  .reprompt()
+  .getResponse();*/
 
   return AnswerIntentHandler.handle(handlerInput);
 },
@@ -277,261 +161,116 @@ const AnswerIntentHandler={
       || (request.type === 'IntentRequest'
         && request.intent.name === 'AnswerIntent');
   },
-  async handle(handlerInput) {
+  handle(handlerInput) {
     
-
-const request = handlerInput.requestEnvelope.request;
-    const SessionAttributes = handlerInput.attributesManager.getSessionAttributes();
-
     let state = " Merry had a little lamb ";
 
-    if(SessionAttributes.firsttime)
+    if(firsttime)
     {
-      SessionAttributes.firsttime =false;
-    
-      let statement =  " State the option which has the word that best matches to the following definition. "+SessionAttributes.questionArray[SessionAttributes.question].definition+" . ";
-      let choices = " option A "+SessionAttributes.optionArray[SessionAttributes.question][0]+" . "+
-                  " option B "+SessionAttributes.optionArray[SessionAttributes.question][1]+" . "+
-                  " option C "+SessionAttributes.optionArray[SessionAttributes.question][2]+" . "+
-                  " option D. "+SessionAttributes.optionArray[SessionAttributes.question][3];
-      handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
-
+      firsttime =false;
+      
       return handlerInput.responseBuilder
-      .speak(statement+choices)
-      .withShouldEndSession(false)
+      .speak(" fisrt question ")
+      .reprompt()
       .getResponse();
 
     }
 
-    if (request.intent.slots.Answer
-      && request.intent.slots.Answer.resolutions
-      && request.intent.slots.Answer.resolutions.resolutionsPerAuthority[0]
-      && request.intent.slots.Answer.resolutions.resolutionsPerAuthority[0].status.code === 'ER_SUCCESS_MATCH'
-      && request.intent.slots.Answer.value !== "?" && request.intent.slots.Answer.value) {
-        SessionAttributes.optionSelected = request.intent.slots.Answer.resolutions.resolutionsPerAuthority[0].values[0].value.name;
-        console.log(" we are checking "+SessionAttributes.optionSelected);
-   } else if ( SessionAttributes.knows != false ){
-    return handlerInput.responseBuilder
-    .speak("Sorry I didn't catch that. Please state the word option followed by your choice A, B, C or D")
-    .withShouldEndSession(false)
-    .getResponse();
-   }
 
-   if ( SessionAttributes.knows != false )
-    {var temp;
-    switch (SessionAttributes.optionSelected) {
-      case 'a':
-        temp = 0;
-        break;
-      case 'b':
-        temp = 1;
-        break;
-      case 'c':
-        temp = 2;
-        break;
-      case 'd':
-        temp = 3;
-        break;
-    } }
 
-    if (SessionAttributes.isQuiz){
-      if(SessionAttributes.noOfQuizQuestions===1)
+
+    optionSelected = handlerInput.requestEnvelope.request.intent.slots.Answer.value; 
+
+
+    if (isQuiz){
+      if(noOfQuizQuestions===1)
       {
-        var result;
-  
-        if(SessionAttributes.questionArray[SessionAttributes.question].word === 
-          SessionAttributes.optionArray[SessionAttributes.question][temp])
+        if(optionSelected==='a')
+        {
+          speech = " Correct ";
+        }else{speech = " Incorrect ";}
+
+        var response = speech+" Quiz has ended ";
+        noOfQuizQuestions--;
+        let params =  
           {
-            result = " correct. ";
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = 1 ;
-            SessionAttributes.attempted++;
-            SessionAttributes.noOfCorrect++;
-            SessionAttributes.unattempted--;
-          }
-          else  {
-            result = " incorrect. Correct answer is the word "+SessionAttributes.questionArray[SessionAttributes.question].word+". ";
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = -1 ;
-            SessionAttributes.attempted++;
-            SessionAttributes.noOfIncorrect++;
-            SessionAttributes.unattempted--;
-          }
-        
-        var response = result+" Quiz has ended. Now would you like to take a quiz or revise or stop. ";
-        SessionAttributes.noOfQuizQuestions--;
+            TableName : 'userData',
+            Item: 
+            {
+              userID : userid,
+              Responses : [1,1,0,0,0]
+            }
+          };
 
-        const attributesManager = handlerInput.attributesManager;
-        const responseBuilder = handlerInput.responseBuilder;
-     
-        const persistentAttributes = await attributesManager.getPersistentAttributes() || {};
-     
-       
-         persistentAttributes.attempted = SessionAttributes.attempted;
-         persistentAttributes.noOfCorrect = SessionAttributes.noOfCorrect;
-         persistentAttributes.noOfIncorrect = SessionAttributes.noOfIncorrect;
-         persistentAttributes.responses = SessionAttributes.responses;
-         persistentAttributes.unattempted = SessionAttributes.unattempted;
-         
-         SessionAttributes.isQuiz = false;
-         attributesManager.setPersistentAttributes(persistentAttributes);
-         await attributesManager.savePersistentAttributes();
-       
+          var documentClient = new AWS.DynamoDB.DocumentClient();
 
-        handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
+          documentClient.put(params,function(err, data) 
+          {
+            if (err) console.log(err);
+            else console.log(data);
+          });
+
         return handlerInput.responseBuilder
         .speak(response)
-        .withShouldEndSession(false)
+        .reprompt()
         .getResponse();
       }
-      else if(SessionAttributes.noOfQuizQuestions>1)
+      else if(noOfQuizQuestions>1)
       {
-        var result;
-        var statement;
-        var choices;
+        if(optionSelected==='a')
+        {
+          speech = " Correct ";
+        }else{speech = " Incorrect ";}
 
-        if(SessionAttributes.questionArray[SessionAttributes.question].word === 
-          SessionAttributes.optionArray[SessionAttributes.question][temp])
-          {
-            result = " correct. ";
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = 1;
-            SessionAttributes.attempted++;
-            SessionAttributes.noOfCorrect++;
-            SessionAttributes.unattempted--;
-          }
-          else{
-            result = " incorrect. Correct answer is the word "+SessionAttributes.questionArray[SessionAttributes.question].word+". ";
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = -1;
-            SessionAttributes.attempted++;
-            SessionAttributes.noOfIncorrect++;
-            SessionAttributes.unattempted--;
-          }
-
-        SessionAttributes.question++;
-        SessionAttributes.noOfQuizQuestions--;
-
-        statement =  " the next definition is. "+SessionAttributes.questionArray[SessionAttributes.question].definition+" . ";
-        choices = " option A "+SessionAttributes.optionArray[SessionAttributes.question][0]+" . "+
-                  " option B "+SessionAttributes.optionArray[SessionAttributes.question][1]+" . "+
-                  " option C "+SessionAttributes.optionArray[SessionAttributes.question][2]+" . "+
-                  " option D. "+SessionAttributes.optionArray[SessionAttributes.question][3];
-      
-
-        var response = result + statement + choices;
-        handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
+        var response = speech+state;
+        noOfQuizQuestions--;
         return handlerInput.responseBuilder
         .speak(response)
-        .withShouldEndSession(false)
+        .reprompt()
         .getResponse();
       }
       else{return handlerInput.responseBuilder
       .speak("Error")
-      .withShouldEndSession(false)
+      .reprompt()
       .getResponse();
     }
     }
 
-    else if (SessionAttributes.isRevision)
+    else if (isRevision)
     {
-      if(SessionAttributes.noOfRevisionQuestions===1)
+      if(noOfRevisionQuestions===1)
       {
-        var result;
-  
-        if(SessionAttributes.questionArray[SessionAttributes.question].word === 
-          SessionAttributes.optionArray[SessionAttributes.question][temp])
-          {
-            result = " correct. ";
-            if (SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] === -1)
-            {
-              SessionAttributes.noOfIncorrect--;
-              SessionAttributes.noOfCorrect++;
-            }
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = 1 ;
-          
-          }
-          else{
-              result = " incorrect. Correct answer is the word "+SessionAttributes.questionArray[SessionAttributes.question].word+". ";
-            if (SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] === 1)
-            {
-              SessionAttributes.noOfIncorrect++;
-              SessionAttributes.noOfCorrect--;
-            }
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = -1 ;
-          }
+        if(optionSelected==='a')
+        {
+          speech = " Correct ";
+        }else{speech = " Incorrect ";}
 
-        var response = result+" Revision has ended. Now would you like to take a quiz or revise or stop. ";
-        SessionAttributes.noOfRevisionQuestions--;
-
-        const attributesManager = handlerInput.attributesManager;
-        const responseBuilder = handlerInput.responseBuilder;
-     
-        const persistentAttributes = await attributesManager.getPersistentAttributes() || {};
-     
-       
-         persistentAttributes.attempted = SessionAttributes.attempted;
-         persistentAttributes.noOfCorrect = SessionAttributes.noOfCorrect;
-         persistentAttributes.noOfIncorrect = SessionAttributes.noOfIncorrect;
-         persistentAttributes.responses = SessionAttributes.responses;
-         persistentAttributes.unattempted = SessionAttributes.unattempted;
-         
-         SessionAttributes.isQuiz = false;
-         attributesManager.setPersistentAttributes(persistentAttributes);
-         await attributesManager.savePersistentAttributes();
-       
-
-        handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
+        var response = speech+" Revision has ended ";
+        noOfRevisionQuestions--;
         return handlerInput.responseBuilder
         .speak(response)
-        .withShouldEndSession(false)
+        .reprompt()
         .getResponse();
       }
-      else if(SessionAttributes.noOfRevisionQuestions>1)
+      else if(noOfRevisionQuestions>1)
       {
-        var result;
-        var statement;
-        var choices;
+        if(optionSelected==='a')
+        {
+          speech = " Correct ";
+        }else{speech = " Incorrect ";}
 
-        if(SessionAttributes.questionArray[SessionAttributes.question].word === 
-          SessionAttributes.optionArray[SessionAttributes.question][temp])
-          {
-            result = " correct. ";
-            if (SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] === -1)
-            {
-              SessionAttributes.noOfIncorrect--;
-              SessionAttributes.noOfCorrect++;
-            }
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = 1;
-          }
-          else{
-            result = " incorrect. Correct answer is the word "+SessionAttributes.questionArray[SessionAttributes.question].word+". ";
-            if (SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] === 1)
-            {
-              SessionAttributes.noOfIncorrect++;
-              SessionAttributes.noOfCorrect--;
-            }
-            SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] = -1;
-          }
-
-        SessionAttributes.question++;
-        SessionAttributes.noOfRevisionQuestions--;
-
-        statement =  " the next definition is. "+SessionAttributes.questionArray[SessionAttributes.question].definition+" . ";
-        choices = " option A "+SessionAttributes.optionArray[SessionAttributes.question][0]+" . "+
-                  " option B "+SessionAttributes.optionArray[SessionAttributes.question][1]+" . "+
-                  " option C "+SessionAttributes.optionArray[SessionAttributes.question][2]+" . "+
-                  " option D. "+SessionAttributes.optionArray[SessionAttributes.question][3];
-      
-
-        var response = result + statement + choices;
-        handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
+        var response = speech+state;
+        noOfRevisionQuestions--;
         return handlerInput.responseBuilder
         .speak(response)
-        .withShouldEndSession(false)
+        .reprompt()
         .getResponse();
       }
       else
       {
         return handlerInput.responseBuilder
         .speak("Error")
-        .withShouldEndSession(false)
+        .reprompt()
         .getResponse();
       }
     }
@@ -540,145 +279,77 @@ const request = handlerInput.requestEnvelope.request;
     {
       return handlerInput.responseBuilder
       .speak("Choose quiz or revision")
-      .withShouldEndSession(false)
+      .reprompt()
       .getResponse();
     }
   
 },
 };
 
-const RepeatQuestionHandler = {
+/*const GetMenuHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
-    return request.type === 'IntentRequest'
-      && request.intent.name === 'RepeatQuestionIntent';
+    return request.type === 'LaunchRequest'
+      || (request.type === 'IntentRequest'
+        && request.intent.name === 'GetMenuIntent');
   },
   handle(handlerInput) {
-      const SessionAttributes = handlerInput.attributesManager.getSessionAttributes();
 
-      let statement =  " State the option which has the word that best matches to the following definition. "+SessionAttributes.questionArray[SessionAttributes.question].definition+" . ";
-      let choices = " option A "+SessionAttributes.optionArray[SessionAttributes.question][0]+" . "+
-                    " option B "+SessionAttributes.optionArray[SessionAttributes.question][1]+" . "+
-                    " option C "+SessionAttributes.optionArray[SessionAttributes.question][2]+" . "+
-                    " option D. "+SessionAttributes.optionArray[SessionAttributes.question][3];
-    
-      return handlerInput.responseBuilder
-      .speak(statement + choices)
-      .reprompt(statement + choices)
-      .getResponse();
-      
+        let params =  {
+		TableName : 'userData',
+        Item: {
+			itemName : "Kesari",
+			price: "20"
+			}
+		};
+		
+		docClient.put(params,function(err, data) {
+			if (err) console.log(err);
+			else console.log(data);
+			});
+			
+			return handlerInput.responseBuilder
+			.speak("We have Idli Dosa Vada and Biryani on the menu today.")
+      .reprompt("reprompting")
+      .getResponse()
+      ;
   },
 };
 
-const RepeatOptionsHandler = {
+/*const OrderHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
-    return request.type === 'IntentRequest'
-      && request.intent.name === 'RepeatOptionsIntent';
+    return request.type === 'LaunchRequest'
+      || (request.type === 'IntentRequest'
+        && request.intent.name === 'OrderIntent');
   },
   handle(handlerInput) {
-      const SessionAttributes = handlerInput.attributesManager.getSessionAttributes();
-
-      let choices = " option A "+SessionAttributes.optionArray[SessionAttributes.question][0]+" . "+
-                    " option B "+SessionAttributes.optionArray[SessionAttributes.question][1]+" . "+
-                    " option C "+SessionAttributes.optionArray[SessionAttributes.question][2]+" . "+
-                    " option D. "+SessionAttributes.optionArray[SessionAttributes.question][3];
-    
-      return handlerInput.responseBuilder
-      .speak(choices)
-      .reprompt(choices)
-      .getResponse();
-      
-  },
-};
-
-const IDontKnowHandler = {
-  canHandle(handlerInput){
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === 'IntentRequest'
-     && request.intent.name === 'IDontKnowIntent';
-  },
-  async handle(handlerInput){
-    const SessionAttributes = handlerInput.attributesManager.getSessionAttributes();
-    var result ="Correct answer is the word "+SessionAttributes.questionArray[SessionAttributes.question].word+" . ";
-
-    if(SessionAttributes.isQuiz){
-      SessionAttributes.noOfIncorrect++;
-      SessionAttributes.attempted++;
-      SessionAttributes.unattempted--;
-
-      SessionAttributes.question++;
-      SessionAttributes.noOfQuizQuestions--;
-
-    } else if (SessionAttributes.isRevision){
-      
-      if ((SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] === 1))
-      {
-        SessionAttributes.responses[SessionAttributes.questionArray[SessionAttributes.question].id] === -1;
-        SessionAttributes.noOfCorrect--;
-        SessionAttributes.noOfIncorrect++;
-      }else{
-        console.log(" no change ");
-      }
-
-      SessionAttributes.question++;
-      SessionAttributes.noOfRevisionQuestions--;
-
-    }else{
-      console.log("something is wrong");
-      return handlerInput.responseBuilder
-    .speak("woah")
-    .withShouldEndSession(false)
-    .getResponse();
-    }
-
-    if((SessionAttributes.noOfQuizQuestions ===0 && SessionAttributes.isQuiz === true)||(SessionAttributes.noOfRevisionQuestions===0 && SessionAttributes.isRevision=== true))
-    {
-      var response = result+" That was the last question. Now would you like to take a quiz or revise or stop. ";
-
-      const attributesManager = handlerInput.attributesManager;
-      const responseBuilder = handlerInput.responseBuilder;
-   
-      const persistentAttributes = await attributesManager.getPersistentAttributes() || {};
-   
-     
-       persistentAttributes.attempted = SessionAttributes.attempted;
-       persistentAttributes.noOfCorrect = SessionAttributes.noOfCorrect;
-       persistentAttributes.noOfIncorrect = SessionAttributes.noOfIncorrect;
-       persistentAttributes.responses = SessionAttributes.responses;
-       persistentAttributes.unattempted = SessionAttributes.unattempted;
-       
-       SessionAttributes.isQuiz = false;
-       SessionAttributes.isRevision = false;
-       attributesManager.setPersistentAttributes(persistentAttributes);
-       await attributesManager.savePersistentAttributes();
-     
-
-      handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
-      return handlerInput.responseBuilder
-      .speak(response)
-      .withShouldEndSession(false)
-      .getResponse();
-    }
-
-console.log("yahatak aa gaya noOfRevisionQuestions = "+SessionAttributes.noOfRevisionQuestions+" isRevision = "+SessionAttributes.isRevision);
-    var statement =  " the next definition is. "+SessionAttributes.questionArray[SessionAttributes.question].definition+" . ";
-    var choices = " option A "+SessionAttributes.optionArray[SessionAttributes.question][0]+" . "+
-              " option B "+SessionAttributes.optionArray[SessionAttributes.question][1]+" . "+
-              " option C "+SessionAttributes.optionArray[SessionAttributes.question][2]+" . "+
-              " option D. "+SessionAttributes.optionArray[SessionAttributes.question][3];
-  console.log("yahapebhi aa gaya");
-
-    var response = result + statement + choices;
-    handlerInput.attributesManager.setSessionAttributes(SessionAttributes);
+    const slots = handlerInput.requestEnvelope.request.intent.slots;
+    const item = slots['Item'].value;
+    const speech = "Okay "+item+" ordered.";
     return handlerInput.responseBuilder
-    .speak(response)
-    .withShouldEndSession(false)
-    .getResponse();
-
-
+      .speak(speech)
+      .getResponse();
   },
-};
+};*/
+
+/*const PriceHandler = {
+  canHandle(handlerInput) {
+    const request = handlerInput.requestEnvelope.request;
+    return request.type === 'LaunchRequest'
+      || (request.type === 'IntentRequest'
+        && request.intent.name === 'PriceIntent');
+  },
+  handle(handlerInput) {
+    var prices = [20,30,20,50];
+    const slots = handlerInput.requestEnvelope.request.intent.slots;
+    const id = slots.Item.resolutions.resolutionsPerAuthority[0].values[0].value.id;
+    const speech2 = "It costs "+prices[id-1]+" rupees.";
+    return handlerInput.responseBuilder
+      .speak(speech2)
+      .getResponse();
+  },
+};*/
 
 const HelpHandler = {
   canHandle(handlerInput) {
@@ -739,210 +410,33 @@ const HELP_MESSAGE = 'You can practice by taking a quiz or you can revise.';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
+const data = [
+  'A year on Mercury is just 88 days long.',
+  'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
+  'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
+  'On Mars, the Sun appears about half the size as it does on Earth.',
+  'Earth is the only planet not named after a god.',
+  'Jupiter has the shortest day of all the planets.',
+  'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
+  'The Sun contains 99.86% of the mass in the Solar System.',
+  'The Sun is an almost perfect sphere.',
+  'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
+  'Saturn radiates two and a half times more energy into space than it receives from the sun.',
+  'The temperature inside the Sun can reach 15 million degrees Celsius.',
+  'The Moon is moving approximately 3.8 cm away from our planet every year.',
+];
+
 const skillBuilder = Alexa.SkillBuilders.standard();
 
-function begin(array1) {
-    var i = 0;
-
-    while(array1[i] != 0)
-        i++;
-
-    return i;
-}
-
-function questionQuiz(array ) {
-     var i = begin(array);
-     var Question; 
-
-     if (i === array.length)
-     {
-        Question = {definition:0,word:0,id:-1};
-        return Question;
-     }
-
-     Question = {definition:data[i].DEFINITION , word:data[i].WORD, id:i}
-
-     array[i] = 2;
-
-     return Question;
-}
-
-function generateQuiz (array,n){
-     var questions = [];
-
-     for(var i = 0; i < n ; i++)
-     {
-         var q = questionQuiz(array);
-
-         questions.push(q);
-     }
-
-     return questions;
-}
-
-function generateOptionArray (qarr)
- {
-    var len = qarr.length;
-    var ans = [];
-
-    for(var i = 0; i < len ; i++)
-    {
-        var answer = optionGenerator(qarr[i]);
-        ans.push(answer);
-    }
-
-    return ans;
-}
-
-function easyArray (array)
- {
-    var len = begin(array);
-    var easy = [];
-
-    for( var i = 0; i < len ; i++ )
-    {
-        if(array[i] == 1)
-        {
-            easy.push(i);
-        }
-    }
-
-    shuffle(easy);
-
-    return easy;
-}
-
-function diffArray (array)
- {
-    var len = begin(array);
-    var diff = [];
-
-    for( var i = 0; i < len ; i++ )
-    {
-        if(array[i] == -1)
-        {
-            diff.push(i);
-        }
-    }
-
-    shuffle(diff);
-
-    return diff;
-}
- 
-function generateEasyQuestions (array,n) {
-    var easyarr = easyArray(array);
-    var Questions = [];
-
-    for(var i = 0 ; i < n ; i++)
-    {
-        var index = easyarr[i];
-
-        var q = {definition:data[index].DEFINITION , word:data[index].WORD, id:index};
-
-        Questions.push(q);
-    }
-
-    return Questions;
-}
-
-function generateDiffQuestions (array,n) {
-    var diffarr = diffArray(array);
-    var Questions = [];
-
-    for(var i = 0 ; i < n ; i++)
-    {
-        var index = diffarr[i];
-
-        var q = {definition:data[index].DEFINITION , word:data[index].WORD, id:index};
-
-        Questions.push(q);
-    }
-
-    return Questions;
-}
-
-function generateMediumQuestions (array,n) {
-    var i = n/2;
-
-    var Questions = [];
-
-    var easyarr = generateEasyQuestions (array,i);
-    var diffarr = generateDiffQuestions (array,n-i);
-
-    for(var j = 0 ; j < easyarr.length ; j++)
-    {
-        Questions.push(easyarr[j]);
-    }
-
-    for(var j = 0 ; j < diffarr.length; j++)
-    {
-        Questions.push(diffarr[j]);
-    }
-
-    shuffle(Questions);
-    shuffle(Questions);
-
-    return Questions;
-}
-
-function optionGenerator(Question) {
-    var options = ["","","",""];
-    options[0] = Question.word;
-
-    for(var i = 1; i < 4 ; i++)
-    {
-        var j = Math.floor(Math.random()*1161);
-
-        while (j == Question.id)
-        j = Math.floor(Math.random()*1161);
-
-        options[i] = data[j].WORD;
-    }
-
-    shuffle(options);
-    shuffle(options);
-
-    var t = options[1];
-    options[1] = options[2];
-    options[2] = t;
-
-    shuffle(options);
-
-    return options;
-}
-
-function shuffle(array) {
-    var m = array.length, t, i;
-  
-    // While there remain elements to shuffle…
-    while (m) {
-  
-      // Pick a remaining element…
-      i = Math.floor(Math.random() * m--);
-  
-      // And swap it with the current element.
-      t = array[m];
-      array[m] = array[i];
-      array[i] = t;
-    }
-  
-    return array;
-}
-
-
-exports.handler = skillBuilder.addRequestHandlers(
-  LaunchHandler,
-  QuizHandler,
-  ReviseHandler,    
-  AnswerIntentHandler,
-  RepeatQuestionHandler,
-  RepeatOptionsHandler,
-  IDontKnowHandler,
-  HelpHandler,
-  ExitHandler,
-  SessionEndedRequestHandler)
+exports.handler = skillBuilder
+  .addRequestHandlers(
+    LaunchHandler,
+    QuizHandler,
+    ReviseHandler,
+    AnswerIntentHandler,
+    HelpHandler,
+    ExitHandler,
+    SessionEndedRequestHandler
+  )
   .addErrorHandlers(ErrorHandler)
-  .withTableName(table)
-  .withAutoCreateTable(true)
   .lambda();
